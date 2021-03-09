@@ -4,7 +4,7 @@ from env import config
 
 s = requests.Session()
 s.headers.update({
-    'Authorization': f"Bearer {config['token']}"
+    'Authorization': f"Bearer {config['WEBEX_ACCESS_TOKEN']}"
 })
 
 # Verify api access
